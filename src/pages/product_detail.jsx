@@ -16,6 +16,9 @@ class ProductDetail extends Component {
   }
 
   componentDidMount() {
+    const htmlTitle = document.querySelector("title");
+    htmlTitle.innerText = '상품상세 페이지';
+
     fetchData().then((res) => {
       this.setState({
         ...this.state,
@@ -78,6 +81,7 @@ class ProductDetail extends Component {
     return (
       <Layout>
         <Container>
+          <h2 className="a11y">상품 상세페이지</h2>
           <OutlineButton
             onClick={() => {
               this.props.history.push('/');
@@ -113,7 +117,7 @@ class ProductDetail extends Component {
 
 export default ProductDetail;
 
-const Container = styled.div`
+const Container = styled.section`
   width: 80rem;
   margin: 3rem auto;
   text-align: right;
@@ -130,7 +134,7 @@ const ProductCard = styled.div`
   width: 80rem;
 `;
 
-const Title = styled.h2`
+const Title = styled.h3`
   font-size: 2.2rem;
   font-weight: 700;
   text-align: right;
