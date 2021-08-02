@@ -39,7 +39,9 @@ $ yarn install
 $ yarn start
 ```
 
-<br>
+## 🔍Wire Frame
+- [Link](https://whimsical.com/BvCNtmKW49fZXtD4QCvSFR)
+![image](https://user-images.githubusercontent.com/76525368/127818550-1c20c4b2-786b-44ab-8268-bfec846836f6.png)
 
 ## 🚀Project Link
 
@@ -50,3 +52,5 @@ $ yarn start
 ![camel1](https://github.com/psy-g/data/blob/master/post/0731-1.gif?raw=true)
 8:55
 ![camel2](https://github.com/psy-g/data/blob/master/post/0731-2.gif?raw=true)
+
+
