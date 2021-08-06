@@ -39,6 +39,9 @@ class RecentList extends Component {
 
   combineData = () => {
     const recentHistory = recentHistoryStorage.load();
+    if (!notInterestedStorage.load() ) {
+      return;
+    }
     const notInterestedId = notInterestedStorage.load().map((ele) => ele.id);
     let temp = [];
 
@@ -58,6 +61,9 @@ class RecentList extends Component {
   };
 
   componentDidMount = () => {
+    const htmlTitle = document.querySelector("title");
+    htmlTitle.innerText = '최근이력 페이지';
+
     const recentHistory = recentHistoryStorage.load();
     let temp = [];
 

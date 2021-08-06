@@ -17,6 +17,9 @@ class Home extends Component {
   }
 
   componentDidMount = () => {
+    const htmlTitle = document.querySelector("title");
+    htmlTitle.innerText = '상품목록 페이지';
+
     fetchData().then((res) => {
       this.setState({ products: res });
     });
